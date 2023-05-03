@@ -6,6 +6,12 @@ Data generator for creating synthetic audio mixtures suitable for DCASE Challeng
 The provided code was tested with Python 3.8 and the following libraries:
 SoundFile 0.10.3, mat73 0.58, numpy 1.20.1, scipy 1.6.2, librosa 0.8.1. 
 
+## Before getting started
+
+* Download the [TAU Spatial Room Impulse Response Database (TAU-SRIR DB)](https://zenodo.org/record/6408611#.ZE6s7y2B3T8) dataset.
+* Download the [FSD50K](https://zenodo.org/record/4060432#.ZE7ely2B0Ts) dataset.
+* Run the script `fsd50k_to_dcase_structure.py` to update and restructure the downloaded `FSD50K` dataset. The dataset needs to follow the structure that this synthesizer pipeline expected, which is dictated by the [FSD50K_selected.txt file.](https://zenodo.org/record/6406873/files/FSD50K_selected.txt?download=1)
+
 ## Getting Started
 
 This repository contains several Python file, which in total create a complete data generation framework.
